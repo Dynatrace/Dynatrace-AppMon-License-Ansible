@@ -1,0 +1,11 @@
+---
+- name: Check if a Dynatrace license is provided locally
+  local_action: stat path="{{ playbook_dir }}/roles/{{ dynatrace_license_role_name }}/files/{{ dynatrace_license_file_name }}"
+  register: dynatrace_license_provided
+
+- name: Fail if a Dynatrace license is not provided locally
+  fail: msg="A Dynatrace license is not provided at {{ playbook_dir }}/roles/{{ dynatrace_license_role_name }}/files/{{ dynatrace_license_file_name }}."
+  when: not dynatrace_license_provided.stat.exists
+
+- include: linux/install-dynatrace-license.yml
+  when: dynatrace_license_provided.stat.exists
