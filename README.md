@@ -13,7 +13,7 @@ The role is available via:
 
 ## Requirements
 
-Place your license as ```dtlicense.key``` in the role's ```files``` directory from where it will be picked up during the automated installation.
+Place your license as ```dynatrace-license.key``` in the role's ```files``` directory from where it will be picked up during the automated installation.
 
 You can obtain a free trial license for Dynatrace from [bit.ly/dttrial](http://bit.ly/dttrial).
 
