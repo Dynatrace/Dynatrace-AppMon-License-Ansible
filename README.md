@@ -26,7 +26,7 @@ As defined in ```defaults/main.yml```:
 | *dynatrace_license_linux_dynatrace_install_dir* | /opt/dynatrace        | The directory that contains an installation of the Dynatrace Server. |
 | *dynatrace_license_linux_license_owner*         | dynatrace             | The file owner of the license file after deployment. |
 | *dynatrace_license_linux_license_grou*p         | dynatrace             | The file group of the license file after deployment. |
-| *dynatrace_license_file_name*                   | dynatrace-license.dtf | The file name of the Dynatrace License in the role's ```files``` directory. |
+| *dynatrace_license_file_name*                   | dynatrace-license.key | The file name of the Dynatrace License in the role's ```files``` directory. |
 | *dynatrace_license_role_name*                   | Dynatrace-License     | The actual name of this role in an [Ansible Playbook's](http://docs.ansible.com/playbooks.html) ```roles``` directory. |
 
 ## Example Playbook
