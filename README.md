@@ -26,14 +26,14 @@ As defined in ```defaults/main.yml```:
 | *dynatrace_license_linux_license_grou*p         | dynatrace                                        | The file group of the license file after deployment. |
 | *dynatrace_license_file_name*                   | dynatrace-license.key                            | The file name of the Dynatrace License in the role's ```files``` directory. |
 | *dynatrace_license_file_url*                    | http://localhost/dynatrace/dynatrace-license.key | A HTTP, HTTPS or FTP URL to the Dynatrace License in the form (http\|https\|ftp)://[user[:pass]]@host.domain[:port]/path. |
-| *dynatrace_license_role_name*                   | dynatrace.Dynatrace-License                      | The actual name of this role in an [Ansible Playbook's](http://docs.ansible.com/playbooks.html) ```roles``` directory. |
+| *dynatrace_license_role_name*                   | Dynatrace.Dynatrace-License                      | The actual name of this role in an [Ansible Playbook's](http://docs.ansible.com/playbooks.html) ```roles``` directory. |
 
 ## Example Playbook
 
 ```
 - hosts: all
   roles:
-    - role: dynatrace.Dynatrace-License
+    - role: Dynatrace.Dynatrace-License
 ```
 
 ## Testing

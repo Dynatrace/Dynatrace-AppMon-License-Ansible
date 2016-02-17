@@ -1,10 +1,10 @@
 ---
 - hosts: test-kitchen
   roles:
-  - role: dynatrace.Dynatrace-Server
+  - role: Dynatrace.Dynatrace-Server
     dynatrace_server_linux_installer_file_url: http://10.0.2.2/dynatrace/dynatrace.jar
     dynatrace_server_linux_service_names: [dynaTraceServer]
     dynatrace_server_fixpack_file_url: no
     dynatrace_server_license_file_url: no
-  - role: dynatrace.Dynatrace-License
+  - role: Dynatrace.Dynatrace-License
     dynatrace_license_file_url: http://10.0.2.2/dynatrace/dynatrace-license.key
