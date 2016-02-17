@@ -8,7 +8,7 @@ This Ansible role installs a Dynatrace License of the [Dynatrace Application Mon
 
 The role is available via:
 
-- [Ansible Galaxy](https://galaxy.ansible.com/list#/roles/5328)
+- [Ansible Galaxy](https://galaxy.ansible.com/Dynatrace/Dynatrace-License)
 - [GitHub](https://github.com/Dynatrace/Dynatrace-License-Ansible)
 
 ## Requirements
