@@ -3,7 +3,7 @@
   stat:
     path: "{{ dynatrace_license_linux_dynatrace_install_dir }}/server/conf"
   register: dynatrace_license_linux_dynatrace_install_dir_exists
-  sudo: yes
+  become: yes
 
 - name: Install the Dynatrace license
   copy:
@@ -14,4 +14,4 @@
     mode: 0600
     backup: yes
   failed_when: not dynatrace_license_linux_dynatrace_install_dir_exists.stat.exists
-  sudo: yes
+  become: yes
